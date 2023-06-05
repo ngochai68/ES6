@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        // 1
+        // var person = {
+        //     name: "Hải",
+        //     age: 21,
+        //     greet: function () {
+        //         console.log("Hello, my name is " + this.name);
+        //     }
+        // };
+
+        // console.log(person.greet());
+
+        // 2
+        // class Shape {
+        //     move(x, y) {
+        //         this.x = x;
+        //         this.y = y;
+        //     }
+        // }
+
+        // 3
+        // class Clock {
+        //     constructor({template}) {
+        //         this.template = template;
+        //         this.timer = null;
+        //     }
+
+        //     render() {
+        //         let date = new Date();
+
+        //         let hours = date.getHours();
+        //         if (hours < 10) 
+        //             hours = '0' + hours;
+                
+
+        //         let mins = date.getMinutes();
+        //         if (mins < 10) 
+        //             mins = '0' + mins;
+                
+
+        //         let secs = date.getSeconds();
+        //         if (secs < 10) 
+        //             secs = '0' + secs;
+                
+
+        //         let output = this.template.replace('h', hours).replace('m', mins).replace('s', secs);
+
+        //         console.log(output);
+        //     }
+
+        //     stop() {
+        //         clearInterval(this.timer);
+        //     }
+
+        //     start() {
+        //         this.render();
+        //         this.timer = setInterval(() => this.render(), 1000);
+        //     }
+        // }
+
+        // 4
+        var person = {
+            firstname: "Hai",
+            lastname: "Ngoc",
+            setLastName: function(_lastname) {
+                this.lastname = _lastname;
+            },
+            setFirstName: function(_firstname) {
+                this.firstname = _firstname;
+            },
+            getFullName: function() {
+                return `${this.lastname} ${this.firstname}`;
+            },
+        };
+
+        person.setLastName("Anh");
+        person.setFirstName("Thơ");
+        console.log(person.getFullName());
+    </script>
+</html>
